@@ -8,7 +8,8 @@ import PrivateRoute from './components/PrivateRoute.js'
 import "./styles.scss";
 
 function App() {
-  const [colorList, setColorList] = useState([]);
+  // const [colorList, setColorList] = useState([]);
+  
   return (
     <Router>
       <div className="App">

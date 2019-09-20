@@ -6,7 +6,10 @@ import './Login.css';
 const Login = props => {
   // make a post request to retrieve a token from the api
   // when you have handled the token, navigate to the BubblePage route
-  const [inputs, setInputs] = useState({});
+  const [inputs, setInputs] = useState({
+    username: '',
+    password: ''
+  });
 
   const handleSubmit = e => {
     if (e) {
@@ -28,13 +31,12 @@ const Login = props => {
       ...inputs,
       [event.target.name]: event.target.value
     }));
-    console.log(inputs);
+    // console.log(inputs);
   };
 
 
   return (
     <>
-      
       <div className="wrapper fadeInDown">
       <h1>Welcome to the Bubble App!</h1>
       <p>Build a login page here</p>
