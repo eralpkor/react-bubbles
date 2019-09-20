@@ -1,11 +1,35 @@
 import React, { useState } from "react";
 import { axiosWithAuth } from '../utils/axiosWithAuth';
 
-const Login = () => {
+import './Login.css';
+
+const Login = props => {
   // make a post request to retrieve a token from the api
   // when you have handled the token, navigate to the BubblePage route
-  const [inputs, setIn]
+  const [inputs, setInputs] = useState({});
 
+  const handleSubmit = e => {
+    if (e) {
+      e.preventDefault();
+
+      axiosWithAuth()
+        .post("/login", inputs)
+        .then(res => {
+          localStorage.setItem("token", res.data.payload);
+          props.history.push("/bubbles");
+        })
+        .catch(err => console.log(err));
+    }
+  }
+
+  const handleInputChange = event => {
+    event.persist();
+    setInputs(inputs => ({
+      ...inputs,
+      [event.target.name]: event.target.value
+    }));
+    console.log(inputs);
+  };
 
 
   return (
