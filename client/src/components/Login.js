@@ -34,16 +34,17 @@ const Login = props => {
 
   return (
     <>
+      
+      <div className="wrapper fadeInDown">
       <h1>Welcome to the Bubble App!</h1>
       <p>Build a login page here</p>
-      <div className="wrapper fadeInDown">
       <div id="formContent">
         <h2 className="active"> Sign In </h2>
         <h2 className="inactive underlineHover">Sign Up </h2>
 
         <div className="fadeIn first"></div>
 
-        <form onSubmit={handleSubmit}>
+        <form className='wrapper' onSubmit={handleSubmit}>
           <input
             type="text"
             id="login"

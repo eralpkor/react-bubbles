@@ -9,7 +9,7 @@
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
-  text-align: center;
+  /* text-align: center; */
 }
 
 a {
@@ -56,6 +56,8 @@ h2 {
 }
 
 #formFooter {
+  display: flex;
+  justify-content: center;
   background-color: #f6f6f6;
   border-top: 1px solid #dce8f1;
   padding: 25px;
@@ -83,7 +85,7 @@ input[type=button], input[type=submit], input[type=reset]  {
   background-color: #56baed;
   border: none;
   color: white;
-  padding: 15px 80px;
+  padding: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -254,6 +256,7 @@ input[type=password]:placeholder {
   -moz-animation-delay: 1s;
   animation-delay: 1s;
   cursor: pointer;
+  text-align: center;
 }
 
 
