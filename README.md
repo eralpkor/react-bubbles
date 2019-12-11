@@ -29,9 +29,31 @@ In this project you will create a login page and request a token from the server
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain what a token is used for.
+
+* JSON Web Tokens way for us to represent our user’s identity securely during a two-party interaction. When two systems exchange data we can use a JSON Web Token to identify our user without having to send private credentials on every request.
+
 - [ ] What steps can you take in your web apps to keep your data secure?
+
+* Web tokens - authentication
+* Protected Routes on React Apps
+* Strong Passwords
+* use HTTPS instead of HTTP
+* Keep software up-to-date 
+
+
 - [ ] Describe how web servers work.
+
+* When we clicked on the link of the page, or typed in its URL browser communicate
+* with name server to translate the server name into IP address, which uses 
+* it to connect to the server usually on port 80.
+* Following the HTTP protocol, the browser sends a GET request to the server,
+* asking for the file 'www.hello.com' for example.
+* And the server then sends the HTML text for the Web page to the browser.
+
 - [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+* Create - POST creates new resource
+* PUT = Updates an existing resource
 
 
 ## Project Set Up
